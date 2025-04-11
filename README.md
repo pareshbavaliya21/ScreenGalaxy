@@ -2,7 +2,7 @@
 
 ScreenGalaxy is a movie search platform built with React and Vite. It allows users to search for movies, view detailed information about each movie, and explore comprehensive details about cast members, including their biographies and filmographies. 
 
-![Home Page Preview](./Home.jpg)
+![Home Page Preview](public/Home.jpg)
 
 ## Features
 - **Search Movies:** Quickly find any movie by its name.
