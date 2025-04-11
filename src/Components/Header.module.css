@@ -1,0 +1,227 @@
+.bodycontainer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  position: relative;
+  background-color: #181818;
+  background-image: url("Home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.herocontent {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.herotitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideInFromTop 1.5s ease-in-out;
+}
+
+.herosubtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+  animation: fadeIn 2s ease-in-out 0.5s;
+  animation-fill-mode: both;
+  color: #f1f1f1;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.inandbtn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  animation: popUp 1.5s ease-in-out 1s;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.search {
+  padding: 10px 15px;
+  font-size: 1rem;
+  max-width: 60%;
+  border: 2px solid #ff7e5f;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #feb47b;
+  box-shadow: 0px 0px 10px #feb47b;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 150px; /* Default width for larger screens */
+  max-width: 100%; /* Ensures responsiveness */
+}
+
+.submit:hover {
+  box-shadow: 0px 0px 15px #feb47b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .herotitle {
+    font-size: 2.5rem;
+  }
+
+  .herosubtitle {
+    font-size: 1.5rem;
+  }
+
+  .inandbtn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search {
+    max-width: 80%;
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  .submit {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    width: 80%; /* Button takes up more space */
+  }
+}
+
+@media (max-width: 768px) {
+  .herotitle {
+    font-size: 2rem;
+  }
+
+  .herosubtitle {
+    font-size: 1.2rem;
+  }
+
+  .search {
+    max-width: 90%;
+  }
+
+  .submit {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    width: 100%; /* Button spans full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-bottom: 150px;
+  }
+
+  .herotitle {
+    font-size: 1.5rem;
+  }
+
+  .herosubtitle {
+    font-size: 1rem;
+  }
+
+  .inandbtn {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 15px;
+    animation: popUp 1.5s ease-in-out 1s;
+  }
+  
+  .search {
+    max-width: 90%;
+    font-size: 0.8rem;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .submit {
+    padding: 5px 80px;
+    font-size: 0.7rem;
+    width: 50%; /* Ensure it takes half the parent's width */
+    margin-left: 0; /* Remove unwanted margin */
+    text-align: center; /* Center text inside the button */
+  }
+}  
