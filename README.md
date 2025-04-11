@@ -27,19 +27,20 @@ ScreenGalaxy is a movie search platform built with React and Vite. It allows use
 Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
-
+```bash
 git clone https://github.com/pareshbavaliya21/ScreenGalaxy.git
-
+```
 
 ### 2. Navigate to the Project Directory
-
+```bash
 cd ScreenGalaxy
-
+```
 
 ### 3. Install Dependencies
 Make sure you have Node.js installed, then run:
-
+```bash
 npm install
+```
 
 ### 4. Start the Development Server
 ```bash
