@@ -23,7 +23,7 @@ const Header = () => {
     <>
       <div className={style.hero}>
         <div className={style.herocontent}>
-          <h1 className={style.herotitle}>Welcome to ScreenGalaxy</h1>
+          <h1 className={style.herotitle}>Welcome to ScreenGalaxyy</h1>
           <p className={style.herosubtitle}>
             {/* Millions of movies, TV shows and people to discover. Explore now. */}
             Your ultimate destination for discovering movies, exploring cast
