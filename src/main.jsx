@@ -20,7 +20,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={moviseStore}>
-      <BrowserRouter>
+      <BrowserRouter basename="/ScreenGalaxy">
         <GetMovise></GetMovise>
         {/* <GetCastDetail /> */}
         <App />
