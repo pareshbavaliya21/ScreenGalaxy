@@ -18,7 +18,7 @@ const Movise = () => {
         {isError ? (
           <div className={style.errorcontainer}>
             <img
-              src="/ErrorPage.png" // Path to the error image in the public folder
+              src={`${import.meta.env.BASE_URL}Images/ErrorPage.png`}
               alt="Error"
               className={style.errorimage}
             />
