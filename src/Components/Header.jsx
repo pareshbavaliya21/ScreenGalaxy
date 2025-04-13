@@ -25,7 +25,12 @@ const Header = () => {
   // };
   return (
     <>
-      <div className={style.hero}>
+      <div
+        className={style.hero}
+        style={{
+          backgroundImage: `url(${import.meta.env.BASE_URL}Images/Home.jpg)`,
+        }}
+      >
         <div className={style.herocontent}>
           <h1 className={style.herotitle}>Welcome to ScreenGalaxy</h1>
           <p className={style.herosubtitle}>
