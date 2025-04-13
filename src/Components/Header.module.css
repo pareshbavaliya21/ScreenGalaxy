@@ -10,7 +10,7 @@
 .hero {
   position: relative;
   background-color: #181818;
-  background-image: url("public/ScreenGalaxy_Images/Home_Page.png");
+  background-image: url("src/assets/Home.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
