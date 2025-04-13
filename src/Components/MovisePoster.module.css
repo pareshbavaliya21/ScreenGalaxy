@@ -1,43 +1,40 @@
+/* Movie Container */
 .moviecontainer {
   display: flex;
-  width: 100%;
-  max-width: 1350px;
-  background-color: #2b2b2b;
-  background-size: cover; 
-  background-position: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+  max-width: 1200px;
   border-radius: 8px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-left: 1rem;
-  margin-top: 50px;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  color: #ffffff;
 }
 
-/* .moviecontainer:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); 
-  
-} */
-
+/* Poster Image */
 .poster {
   flex: 1;
   max-width: 300px;
+  margin: 20px;
 }
 
 .poster img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* Details Section */
 .details {
   flex: 2;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
 }
 
 .title {
@@ -95,7 +92,6 @@
 
 .trailerButton {
   margin-top: 15px;
-  margin-left: 650px;
   padding: 10px 20px;
   background-color: #f83306;
   color: white;
@@ -107,111 +103,24 @@
 
 .trailerButton:hover {
   background-color: #ff5733;
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
-  
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
 }
 
-/* General styles remain the same */
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .moviecontainer {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 992px) {
+/* Mobile View */
+@media (max-width: 768px) {
   .moviecontainer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 4rem;
   }
 
   .poster {
-    max-width: 100%;
+    margin: 0 auto;
   }
 
   .details {
     padding: 15px;
-  }
-
-  .trailerButton {
-    margin-left: 0;
-    margin-top: 20px;
     width: 100%;
-    text-align: center;
   }
 }
-
-@media (max-width: 768px) {
- 
-
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .info {
-    font-size: 0.8rem;
-  }
-
-  .score {
-    width: 40px;
-    height: 40px;
-    font-size: 0.6rem;
-  }
-
-  .overview {
-    font-size: 0.9rem;
-  }
-
-  .crew {
-    font-size: 0.8rem;
-  }
-
-  .trailerButton {
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .moviecontainer {
-    width: 100%;
-    margin: 0%;
-    margin-bottom: 2.5rem;
-  }
-
-  .details {
-    padding: 10px;
-  }
-
-  .trailerButton {
-    font-size: 0.9rem;
-    padding: 10px 15px;
-  }
-}
-
-@media (max-width: 360px) {
-  .moviecontainer {
-    width: 100%;
-    margin: 0%;
-    margin-bottom: 8rem;
-  }
-}
-@media (max-width: 312px) {
-  .moviecontainer {
-    width: 100%;
-    margin: 0%;
-    margin-bottom: 10rem;
-  }
-}
-@media (max-width: 577px) {
-  .moviecontainer {
-    width: 100%;
-    margin: 0%;
-    margin-bottom: 3rem;
-  }
-}
-

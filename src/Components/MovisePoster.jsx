@@ -16,7 +16,6 @@ const MovisePoster = () => {
       ? Poster.credits.crew[0].name
       : "";
 
-  // Use the backdrop path from the API response
   const backdropImageUrl =
     Poster && Poster.backdrop_path
       ? `https://image.tmdb.org/t/p/original/${Poster.backdrop_path}`
@@ -28,7 +27,6 @@ const MovisePoster = () => {
     return `${hours}h ${minutes}m`;
   };
 
-  // Fetch trailer URL
   useEffect(() => {
     const fetchTrailer = async () => {
       if (Poster && Poster.id) {
