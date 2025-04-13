@@ -1,13 +1,10 @@
-/* MovisePosterCast.module.css */
-
+/* Base Styles */
 .container {
   position: relative;
   padding: 20px;
-  margin: 20px;
-  margin-left: 20px;
-  /* margin-bottom: 10rem; */
-  height: 1000px; /* Adjusted height */
-  max-width: 1300px;
+  margin: 20px auto;
+  height: auto; /* Let the content determine the height */
+  max-width: 100%; /* Adjusted for smaller screens */
   background-color: #181818;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -25,19 +22,6 @@
   cursor: pointer;
   color: #ddd;
 }
-/* .backButton {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #333; 
-}
-
-.backButton:hover {
-  color: #555; 
-} */
 
 .backButton {
   position: absolute;
@@ -60,8 +44,52 @@
   background-color: #e63900;
 }
 
-/* @media (max-width: 987px) {
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-   border: none;
+    padding: 15px;
+    margin: 10px;
+    max-width: 95%; 
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
   }
-} */
+
+  .closeButton {
+    font-size: 20px; 
+  }
+
+  .backButton {
+    padding: 6px 10px; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px; 
+    font-size: 0.9rem; 
+  }
+
+  .backButton {
+    padding: 4px 8px;
+    font-size: 0.8rem; 
+  }
+
+  .closeButton {
+    font-size: 18px; 
+  }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1427px; 
+    margin: 20px auto;
+  }
+
+  .backButton {
+    font-size: 1.2rem; 
+    padding: 10px 14px; 
+  }
+}

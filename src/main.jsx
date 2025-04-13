@@ -9,20 +9,12 @@ import GetMovise from "./Components/GetMovise.jsx";
 import GetCastDetail from "./Components/GetCastDetail.jsx";
 import GetSearchMovise from "./Components/GetSearchMovise.jsx";
 import { BrowserRouter } from "react-router-dom";
-// import { createBrowserRouter } from "react-router-dom";
 
-// const router = createBrowserRouter([
-//   {
-//     path:"/",
-//     element:
-//   }
-// ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={moviseStore}>
       <BrowserRouter basename="/ScreenGalaxy">
         <GetMovise></GetMovise>
-        {/* <GetCastDetail /> */}
         <App />
       </BrowserRouter>
     </Provider>

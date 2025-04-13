@@ -1,17 +1,24 @@
 .moviecontainer {
   display: flex;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1350px;
   background-color: #2b2b2b;
-  background-size: cover; /* Cover the entire container */
+  background-size: cover; 
   background-position: center;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-left: 70px;
+  margin-left: 1rem;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+
+/* .moviecontainer:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); 
+  
+} */
 
 .poster {
   flex: 1;
@@ -207,8 +214,4 @@
     margin-bottom: 3rem;
   }
 }
-/* @media (min-width: 420px) and (max-width: 580px) {
-  .moviecontainer {
-    margin-bottom: 10px;
-  }
-} */
+

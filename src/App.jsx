@@ -26,13 +26,7 @@ function App() {
         <Route path="/movisepostercast/:id" element={<MovisePosterCast />} />
         <Route path="/castdetail/:id" element={<GetCastDetail />} />
         <Route path="/movisedetail/:id" element={<PosterCast />} />
-        {/* <Route path="/postercast/:id" element={<PosterCast />} />
-        <Route path="/moviseposter" element={<MovisePoster />} /> */}
       </Routes>
-
-      {/* <Header />
-      <MoviseContainer />
-      <Footer /> */}
     </>
   );
 }
