@@ -4,6 +4,7 @@ import { moviseNameAction } from "../store/moviseNameSlice";
 import GetSearchMovise from "./GetSearchMovise";
 import style from "./Header.module.css";
 import Movise from "./movise";
+import HomeImage from "../assets/Home.jpg";
 
 const Header = () => {
   const moviseName = useRef();
@@ -19,9 +20,12 @@ const Header = () => {
     }, 0);
     moviseName.current.value = "";
   };
+  const heroStyle = {
+    backgroundImage: `url(${HomeImage})`,
+  };
   return (
     <>
-      <div className={style.hero}>
+      <div className={style.hero} style={heroStyle}>
         <div className={style.herocontent}>
           <h1 className={style.herotitle}>Welcome to ScreenGalaxy</h1>
           <p className={style.herosubtitle}>
